@@ -5,7 +5,7 @@ import "./App.css";
   const ingredients = [];
   for (let i = 1; i <= 20; i++) {
     const name = "strIngredient" + i;
-    ingredients[i] = props.meal[name];
+    ingredients[i-1] = props.meal[name];
   }
   return (
     <div id="single-meal">
